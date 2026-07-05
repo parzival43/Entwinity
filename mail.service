@@ -1,0 +1,12 @@
+[Unit]
+Description=Mail API
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=gunicorn --chdir /dos/entwinity/ main:app -b 0.0.0.0:4000
+[Install]
+WantedBy=multi-user.target

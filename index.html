@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entwinity | Student-led. Global. Collaborative.</title>
+
+  <!-- Meta tags for SEO -->
+  <meta name="description"
+    content="Entwinity is an international, student-driven committee connecting ambitious minds from over 25 countries. We provide a platform for student leadership, collaboration, and skill development.">
+  <meta name="keywords"
+    content="student community, international student organization, leadership, collaboration, networking, programming club, robotics club, student projects">
+  <meta name="author" content="Entwinity Committee">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/entwinty.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide Icons CDN (for clean UI icons) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="light-theme">
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo-area" aria-label="Entwinity Home">
+        <img src="assets/entwinty.png" alt="" class="logo-image" width="40" height="40">
+        <span class="logo-text">Entwinity</span>
+      </a>
+
+      <!-- Desktop & Mobile Nav Wrapper -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu"
+          aria-label="Toggle navigation menu">
+          <i data-lucide="menu" class="menu-icon"></i>
+          <i data-lucide="x" class="close-icon"></i>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#clubs" class="nav-link">Clubs</a></li>
+          <li><a href="#why-join" class="nav-link">Why Join</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher Button -->
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle color theme">
+        <i data-lucide="moon" class="theme-icon-dark"></i>
+        <i data-lucide="sun" class="theme-icon-light"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-illustration fade-in-on-scroll">
+          <h1 class="sr-only">Entwinity</h1>
+          <img src="assets/entwinty.png" alt="Entwinity Logo" class="hero-img logo-hero-display">
+        </div>
+
+        <div class="hero-content fade-in-on-scroll">
+          <span class="hero-badge">Student-led. Global. Collaborative.</span>
+          <p class="hero-description">
+            Entwinity is an international, student-driven committee connecting ambitious minds from over 25
+            countries—and growing! We provide a dynamic platform where students unite, share ideas, and innovate,
+            offering countless avenues for personal and professional development.
+          </p>
+          <div class="hero-actions">
+            <a href="https://chat.whatsapp.com/MAIN_COMMUNITY_LINK" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-lg">
+              <span>Join Our Community</span>
+              <i data-lucide="arrow-right" class="btn-icon"></i>
+            </a>
+            <a href="#about" class="btn btn-secondary btn-lg">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave separator -->
+      <div class="section-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,84.75,25.32,181.56,49.88,272.59,65.8,321.39,56.44Z"
+            class="divider-path"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat Card 1 -->
+          <div class="stat-card fade-in-on-scroll">
+            <div class="stat-icon-wrapper blue-icon">
+              <i data-lucide="globe"></i>
+            </div>
+            <div class="stat-number" data-target="25">25+</div>
+            <div class="stat-label">Countries Represented</div>
+          </div>
+          <!-- Stat Card 2 -->
+          <div class="stat-card fade-in-on-scroll">
+            <div class="stat-icon-wrapper teal-icon">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="stat-number" data-target="1000">1000+</div>
+            <div class="stat-label">Active Students</div>
+          </div>
+          <!-- Stat Card 3 -->
+          <div class="stat-card fade-in-on-scroll">
+            <div class="stat-icon-wrapper violet-icon">
+              <i data-lucide="compass"></i>
+            </div>
+            <div class="stat-number">Multiple</div>
+            <div class="stat-label">Student Clubs</div>
+          </div>
+          <!-- Stat Card 4 -->
+          <div class="stat-card fade-in-on-scroll">
+            <div class="stat-icon-wrapper accent-icon">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <div class="stat-number">Growing</div>
+            <div class="stat-label">Global Network</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tagline">Who We Are</span>
+          <h2 class="section-title">An Empowering, Student-Driven Ecosystem</h2>
+          <p class="section-desc">Entwinity was established to break geographical boundaries and create an inclusive
+            environment where any student can grow, lead, and acquire practical, real-world skills.</p>
+        </div>
+
+        <div class="about-content-grid">
+          <div class="about-visual fade-in-on-scroll">
+            <div class="about-quote-box">
+              <i data-lucide="quote" class="quote-icon"></i>
+              <p class="quote-text">
+                "We believe that global collaboration is the key to unlocking student potential. Entwinity offers a
+                borderless learning experience driven entirely by student ambition."
+              </p>
+              <span class="quote-author">— Entwinity Committee</span>
+            </div>
+          </div>
+
+          <div class="about-features fade-in-on-scroll">
+            <div class="about-feature-item">
+              <div class="feature-bullet"><i data-lucide="check" class="bullet-check"></i></div>
+              <div class="feature-info">
+                <h3>Student-Driven Leadership</h3>
+                <p>We are governed entirely by students, for students. Everyone has a voice and the opportunity to lead
+                  initiatives.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-bullet"><i data-lucide="check" class="bullet-check"></i></div>
+              <div class="feature-info">
+                <h3>International Collaboration</h3>
+                <p>Collaborate daily with students from diverse backgrounds, fostering multicultural understanding and
+                  global friendships.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-bullet"><i data-lucide="check" class="bullet-check"></i></div>
+              <div class="feature-info">
+                <h3>Networking &amp; Career Opportunities</h3>
+                <p>Connect with peers, alumni, and industry professionals, opening doors to mentorship and career
+                  advice.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-bullet"><i data-lucide="check" class="bullet-check"></i></div>
+              <div class="feature-info">
+                <h3>Free and Inclusive Participation</h3>
+                <p>No membership fees. Entwinity is built on the philosophy of open education and accessibility for all
+                  students globally.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clubs Section (DYNAMIC CSV LOAD) -->
+    <section id="clubs" class="clubs-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tagline">Our Communities</span>
+          <h2 class="section-title">Explore and Join Our Dynamic Student Clubs</h2>
+          <p class="section-desc">Our clubs are organized via dedicated WhatsApp groups. We fetch and render them
+            dynamically, making it easy to hop directly into your areas of interest.</p>
+        </div>
+
+        <!-- Injected dynamically via script.js -->
+        <div id="clubs-grid" class="clubs-grid fade-in-on-scroll">
+          <div class="clubs-loading">
+            <div class="spinner"></div>
+            <p>Loading clubs list dynamically...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section id="why-join" class="why-join-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tagline">Benefits &amp; Impact</span>
+          <h2 class="section-title">Why Join the Entwinity Network?</h2>
+          <p class="section-desc">We offer tools, frameworks, and support systems to help you excel academically and
+            professionally outside traditional lecture halls.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit Item 1 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon blue-theme">
+              <i data-lucide="award"></i>
+            </div>
+            <h3>Leadership Opportunities</h3>
+            <p>Take charge of committees, manage global projects, coordinate events, and build concrete leadership
+              credentials.</p>
+          </div>
+
+          <!-- Benefit Item 2 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon teal-theme">
+              <i data-lucide="globe-2"></i>
+            </div>
+            <h3>International Collaboration</h3>
+            <p>Work on cross-border challenges, build items with teams globally, and understand diverse working styles.
+            </p>
+          </div>
+
+          <!-- Benefit Item 3 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon violet-theme">
+              <i data-lucide="heart"></i>
+            </div>
+            <h3>Global Friendships</h3>
+            <p>Meet peers who share your drive, form lifelong connections, and build a global support system.</p>
+          </div>
+
+          <!-- Benefit Item 4 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon blue-theme">
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3>Skill Development</h3>
+            <p>Gain technical and soft skills through collaborative projects, peer review, and active learning groups.
+            </p>
+          </div>
+
+          <!-- Benefit Item 5 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon teal-theme">
+              <i data-lucide="folder-git-2"></i>
+            </div>
+            <h3>Student Projects</h3>
+            <p>Create actual software, research papers, marketing strategies, or robotics models with real-world
+              application.</p>
+          </div>
+
+          <!-- Benefit Item 6 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon violet-theme">
+              <i data-lucide="network"></i>
+            </div>
+            <h3>Active Networking</h3>
+            <p>Engage in discussions with high-performing students and leaders, developing professional networking
+              capabilities.</p>
+          </div>
+
+          <!-- Benefit Item 7 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon blue-theme">
+              <i data-lucide="calendar"></i>
+            </div>
+            <h3>Workshops &amp; Events</h3>
+            <p>Participate in free expert-led seminars, interactive coding sessions, and global student summits.</p>
+          </div>
+
+          <!-- Benefit Item 8 -->
+          <div class="benefit-card fade-in-on-scroll">
+            <div class="benefit-icon teal-theme">
+              <i data-lucide="file-badge"></i>
+            </div>
+            <h3>Certificates &amp; Recognition</h3>
+            <p>Receive certificates of contribution and letters of recommendation for core contributions to student
+              initiatives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Community Map Section -->
+    <section class="global-map-section">
+      <div class="container">
+        <div class="map-grid">
+          <div class="map-text fade-in-on-scroll">
+            <span class="section-tagline">Connected Borderless</span>
+            <h2 class="section-title">Bridging Minds Across Borders</h2>
+            <p>
+              Our network spans over 25 countries, creating a truly global learning lounge. By connecting students from
+              diverse backgrounds, we ensure that every idea is examined through multiple lenses, encouraging true
+              innovation and building lasting international solidarity.
+            </p>
+            <div class="map-countries-list">
+              <div class="country-pill"><span>🇺🇸</span> USA</div>
+              <div class="country-pill"><span>🇬🇧</span> UK</div>
+              <div class="country-pill"><span>🇮🇳</span> India</div>
+              <div class="country-pill"><span>🇩🇪</span> Germany</div>
+              <div class="country-pill"><span>🇨🇦</span> Canada</div>
+              <div class="country-pill"><span>🇳🇬</span> Nigeria</div>
+              <div class="country-pill"><span>🇧🇷</span> Brazil</div>
+              <div class="country-pill"><span>🇯🇵</span> Japan</div>
+              <div class="country-pill"><span>🇦🇺</span> Australia</div>
+            </div>
+          </div>
+          <div class="map-visual fade-in-on-scroll" aria-hidden="true">
+            <img src="assets/world.svg" alt="Map representing Entwinity's connected global hubs" class="world-map-svg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-in-on-scroll">
+            <span class="section-tagline">Get In Touch</span>
+            <h2 class="section-title">We'd Love to Hear From You</h2>
+            <p>
+              Have a question about Entwinity? Interested in starting a new student club or partnering with us? Fill out
+              the form and our leadership team will get back to you shortly.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <i data-lucide="mail" class="contact-icon"></i>
+                <div>
+                  <h4>Email Us</h4>
+                  <p><a href="mailto:info@entwinity.org" class="contact-link">info@entwinity.org</a></p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <i data-lucide="message-square" class="contact-icon"></i>
+                <div>
+                  <h4>WhatsApp Chat</h4>
+                  <p><a href="https://chat.whatsapp.com/MAIN_COMMUNITY_LINK" target="_blank" rel="noopener noreferrer"
+                      class="contact-link">General WhatsApp Community</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper fade-in-on-scroll">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                  <span class="error-message" id="error-name" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                  <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                  <span class="error-message" id="error-email" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-country">Country <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="form-country" name="country" required placeholder="United Kingdom">
+                  <span class="error-message" id="error-country" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-school">Institution / School <span class="required"
+                      aria-hidden="true">*</span></label>
+                  <input type="text" id="form-school" name="school" required placeholder="University of Oxford">
+                  <span class="error-message" id="error-school" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="form-subject" name="subject" required
+                  placeholder="Inquiry about Programming Club">
+                <span class="error-message" id="error-subject" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="form-message" name="message" rows="5" required
+                  placeholder="Tell us how we can help or how you want to contribute..."></textarea>
+                <span class="error-message" id="error-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send Message</span>
+                <i data-lucide="send" class="btn-icon"></i>
+              </button>
+
+              <!-- Form Submission Status Alerts -->
+              <div class="form-status" id="form-status-box" aria-live="polite">
+                <!-- Status messages injected dynamically via JS -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Area -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-brand fade-in-on-scroll">
+        <a href="#" class="logo-area" aria-label="Entwinity Home">
+          <img src="assets/entwinty.png" alt="" class="logo-image" width="36" height="36">
+          <span class="logo-text">Entwinity</span>
+        </a>
+        <p class="footer-tagline">Student-led International Community</p>
+        <p class="footer-desc">
+          Uniting ambitious minds from across the globe to collaborate, share knowledge, and lead student projects.
+        </p>
+      </div>
+
+      <div class="footer-links fade-in-on-scroll">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#clubs">Clubs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social fade-in-on-scroll">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon-btn" aria-label="WhatsApp Community" title="WhatsApp Community">
+            <!-- <i data-lucide="message-circle"></i> -->
+            <img src="assets/whatsapp.svg" class="svg-icon" alt="" width="24" height="24">
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+            <!-- <i data-lucide="linkedin"></i> -->
+            <img src="assets/linkedin.svg" class="svg-icon" alt="" width="24" height="24">
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+            <!-- <i data-lucide="github"></i> -->
+            <img src="assets/github.svg" class="svg-icon" alt="" width="24" height="24">
+
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+            <!-- <i data-lucide="instagram"></i> -->
+            <img src="assets/instagram.svg" class="svg-icon" alt="" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright-text">&copy; 2026 Entwinity Committee. All rights reserved. Created by students, for students.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Javascript logic files -->
+  <script src="script.js"></script>
+</body>
+
+</html>

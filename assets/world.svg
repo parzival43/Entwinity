@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Map Styling Gradients -->
+    <linearGradient id="mapLand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="mapLandDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="netLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#0d9488" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <filter id="glowWorld" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Stylized world outline paths -->
+  <g class="world-continents">
+    <!-- North America -->
+    <path d="M 120 100 Q 130 90 160 85 T 210 95 T 260 110 T 265 140 T 230 160 T 200 170 T 195 210 T 180 230 T 170 260 T 160 270 T 150 250 T 155 210 T 120 180 T 100 160 T 100 130 Z" fill="url(#mapLand)" class="land-path" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- South America -->
+    <path d="M 170 260 Q 185 270 210 290 T 235 340 T 215 390 T 195 420 T 185 420 T 180 380 T 170 340 T 155 300 T 160 280 Z" fill="url(#mapLand)" class="land-path" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Eurasia (Europe + Asia) -->
+    <path d="M 380 90 Q 420 80 480 80 T 560 70 T 640 80 T 700 90 T 740 110 T 760 140 T 740 180 T 700 200 T 660 210 T 620 230 T 580 250 T 560 270 T 540 250 T 550 210 T 500 190 T 460 200 T 420 180 T 380 150 T 360 120 Z" fill="url(#mapLand)" class="land-path" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Africa -->
+    <path d="M 380 190 Q 420 185 455 210 T 480 240 T 490 280 T 460 320 T 440 360 T 425 385 T 415 385 T 405 340 T 375 290 T 365 240 T 360 210 Z" fill="url(#mapLand)" class="land-path" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Australia -->
+    <path d="M 640 310 Q 670 305 700 315 T 720 340 T 695 380 T 650 370 T 630 340 Z" fill="url(#mapLand)" class="land-path" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Greenland -->
+    <path d="M 240 50 Q 270 45 290 60 T 270 95 T 235 80 Z" fill="url(#mapLand)" class="land-path" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+
+  <!-- Network lines representing connections -->
+  <g fill="none" stroke="url(#netLineGrad)" stroke-linecap="round">
+    <!-- Connecting arches between hubs -->
+    <!-- North America (New York) to Europe (London) -->
+    <path d="M 210 150 Q 315 90 420 140" stroke-width="2" />
+    
+    <!-- Europe (London) to Asia (Delhi) -->
+    <path d="M 420 140 Q 495 180 570 200" stroke-width="2.5" />
+    
+    <!-- North America (New York) to South America (Sao Paulo) -->
+    <path d="M 210 150 Q 220 240 215 330" stroke-width="1.5" />
+    
+    <!-- South America (Sao Paulo) to Africa (Johannesburg) -->
+    <path d="M 215 330 Q 330 340 445 350" stroke-width="1.5" />
+    
+    <!-- Africa (Lagos) to Europe (Paris) -->
+    <path d="M 405 240 Q 410 180 430 145" stroke-width="1.5" />
+    
+    <!-- Asia (Delhi) to Australia (Sydney) -->
+    <path d="M 570 200 Q 630 270 680 340" stroke-width="2" />
+    
+    <!-- Asia (Delhi) to East Asia (Tokyo) -->
+    <path d="M 570 200 Q 650 160 690 140" stroke-width="1.5" />
+    
+    <!-- East Asia (Tokyo) to North America (SF) -->
+    <path d="M 690 140 Q 450 10 210 150" stroke-width="1" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Active Connection/Student Hub Nodes -->
+  <g>
+    <!-- North America: New York -->
+    <circle cx="210" cy="150" r="8" fill="#0284c7" filter="url(#glowWorld)" />
+    <circle cx="210" cy="150" r="4" fill="#ffffff" />
+    
+    <!-- North America: San Francisco / West Coast -->
+    <circle cx="150" cy="140" r="6" fill="#38bdf8" />
+    <circle cx="150" cy="140" r="2.5" fill="#ffffff" />
+    
+    <!-- South America: Sao Paulo -->
+    <circle cx="215" cy="330" r="7" fill="#0d9488" filter="url(#glowWorld)" />
+    <circle cx="215" cy="330" r="3.5" fill="#ffffff" />
+    
+    <!-- Europe: London/Paris -->
+    <circle cx="420" cy="140" r="8" fill="#6366f1" filter="url(#glowWorld)" />
+    <circle cx="420" cy="140" r="4" fill="#ffffff" />
+    
+    <!-- Africa: Lagos -->
+    <circle cx="405" cy="240" r="6" fill="#a78bfa" />
+    <circle cx="405" cy="240" r="2.5" fill="#ffffff" />
+    
+    <!-- Africa: Johannesburg -->
+    <circle cx="445" cy="350" r="7" fill="#0ea5e9" />
+    <circle cx="445" cy="350" r="3" fill="#ffffff" />
+    
+    <!-- Asia: Delhi -->
+    <circle cx="570" cy="200" r="9" fill="#0d9488" filter="url(#glowWorld)" />
+    <circle cx="570" cy="200" r="4.5" fill="#ffffff" />
+    
+    <!-- Asia: Tokyo -->
+    <circle cx="690" cy="140" r="7" fill="#38bdf8" />
+    <circle cx="690" cy="140" r="3" fill="#ffffff" />
+    
+    <!-- Australia: Sydney -->
+    <circle cx="680" cy="340" r="7" fill="#6366f1" filter="url(#glowWorld)" />
+    <circle cx="680" cy="340" r="3.5" fill="#ffffff" />
+    
+    <!-- Other minor student nodes -->
+    <circle cx="180" cy="180" r="3.5" fill="#2dd4bf" />
+    <circle cx="200" cy="290" r="4" fill="#38bdf8" />
+    <circle cx="455" cy="120" r="4" fill="#a78bfa" />
+    <circle cx="510" cy="160" r="4" fill="#0284c7" />
+    <circle cx="610" cy="230" r="3.5" fill="#2dd4bf" />
+    <circle cx="660" cy="325" r="4" fill="#0d9488" />
+  </g>
+</svg>
