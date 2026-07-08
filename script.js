@@ -362,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       try {
-        const response = await fetch("http://127.0.0.1/api", {
+        const response = await fetch("/api", {
           method: "POST",
           headers: {
             "content-type": "application/json"
