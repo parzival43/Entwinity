@@ -303,19 +303,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Put form into submitting state
       setSubmittingState(true);
 
-      // Verify Config availability
-      if (typeof BREVO_API_KEY === "undefined" || typeof RECEIVER_EMAIL === "undefined") {
-        showStatusMessage("error", "Configuration Error: config.js is missing or parameters are not set.");
-        setSubmittingState(false);
-        return;
-      }
-
-      if (BREVO_API_KEY === "YOUR_API_KEY" || RECEIVER_EMAIL === "YOUR_EMAIL") {
-        showStatusMessage("error", "Brevo API parameters are currently placeholders in config.js. Please fill in a valid API key.");
-        setSubmittingState(false);
-        return;
-      }
-
       // Prepare Brevo request body
       const emailBody = {
         subject: `[Entwinity Contact] ${data.subject}`,
