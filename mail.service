@@ -7,6 +7,6 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=gunicorn --chdir /dos/entwinity/ main:app -b 0.0.0.0:4000
+ExecStart=/bin/bash -l -i -c "gunicorn --chdir /var/www/entwinity.hopto.org/ main:app -b 127.0.0.1:4000"
 [Install]
 WantedBy=multi-user.target
