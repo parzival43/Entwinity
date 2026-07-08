@@ -44,7 +44,7 @@ and this project follows Semantic Versioning where practical.
 - Open Graph metadata and WebSite structured data.
 - Changelog documentation.
 - Missing Community links.
-
+- Social Links
 ### Fixed
 - Fixed forced reflow violation occuring in mobile devices in script.js.
 - Fixed asset loading over HTTPS.
