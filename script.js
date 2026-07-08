@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>No active clubs found in the list. Please check back later!</p>
         </div>
       `;
-      lucide.createIcons();
+      //lucide.createIcons();
       return;
     }
 
@@ -235,9 +235,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("article");
       card.className = "club-card";
       card.innerHTML = `
-        <!--<div class="club-card-icon">
-          <i data-lucide=""></i> 
-        </div>-->
         <h3>${escapeHTML(clubName)}</h3>
         <p>${escapeHTML(description)}</p>
         <a href="${escapeHTML(link)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
@@ -246,10 +243,13 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
       `;
       clubsGrid.appendChild(card);
+      //              <!--<div class="club-card-icon">
+      //          <i data-lucide=""></i> 
+      //        </div>-->
     });
 
     // Re-trigger Lucide to render the icons in injected cards
-    lucide.createIcons();
+    //lucide.createIcons();
   }
 
   function renderClubsError(msg) {
@@ -273,7 +273,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
   }
-
   // 5. Contact Form Client-side Validation & Submission via Brevo
   const contactForm = document.getElementById("contact-form");
   const formStatusBox = document.getElementById("form-status-box");
@@ -376,7 +375,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       try {
-        const response = await fetch("http://127.0.0.1/api/", {
+        const response = await fetch("http://127.0.0.1/api", {
           method: "POST",
           headers: {
             "content-type": "application/json"
