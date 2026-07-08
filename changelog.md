@@ -45,6 +45,7 @@ and this project follows Semantic Versioning where practical.
 - Changelog documentation.
 - Missing Community links.
 - Social Links
+- updat.sh - automatic deployment from github
 ### Fixed
 - Fixed forced reflow violation occuring in mobile devices in script.js.
 - Fixed asset loading over HTTPS.
