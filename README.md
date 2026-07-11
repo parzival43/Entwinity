@@ -44,7 +44,7 @@ Each club includes:
 * Short description
 * WhatsApp community link
 
-Adding a new club is as easy as adding another row to the CSV file:
+To add a new club, just add an another row to the CSV file:
 
 ```csv
 Club Name,Description,WhatsApp Link
@@ -55,21 +55,15 @@ No changes to the HTML are required.
 
 To make the interface feel more polished, the website also assigns suitable icons automatically based on the club's name (for example, robotics, programming, research, entrepreneurship, and more).
 
----
-
 ### Python Backend Mail Service
 
 This service is used to receive messages from the contact form and send them to the Entwinity team.
 It is built using the flask framework and the Brevo Email API.
 It handles json data from the post requests from javascript, and sends the data to the Entwinity team via email.
 
----
-
 ### Light and Dark Mode
 
 Visitors can switch between light and dark themes using the toggle in the navigation bar. Their preference is saved in the browser, so the selected theme is remembered the next time they visit.
-
----
 
 ### Contact Form
 
@@ -87,6 +81,8 @@ The form collects:
 Basic validation is performed before submission to ensure all required fields are completed and email addresses are entered correctly.
 
 Messages are then sent to the Entwinity team using a backend python flask service [main.py], [mail.service] which is connected to **Brevo Email API**, providing a simple way to receive enquiries.
+
+---
 
 ### Development
 
