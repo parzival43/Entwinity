@@ -65,6 +65,7 @@ No changes to the HTML are required.
 
 To make the interface feel more polished, the website also assigns suitable icons automatically based on the club's name (for example, robotics, programming, research, entrepreneurship, and more).
 
+
 ### Python Backend Mail Service
 
 This service is used to receive messages from the contact form and send them to the Entwinity team.
