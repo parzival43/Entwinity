@@ -1,5 +1,7 @@
 # Entwinity Student Community Website
 
+> **<https://entwinity.hopto.org/>**
+
 Welcome to the official website repository for **Entwinity**.
 
 Entwinity is a global, student-led community that brings together ambitious students from more than **25 countries**. Our goal is to create a space where students can connect, collaborate, develop new skills, and take on leadership opportunities—all completely free.
@@ -18,17 +20,25 @@ We believe that meaningful learning extends beyond the classroom. Entwinity prov
 
 ---
 
+## Quick Links
+
+- [WhatsApp Community](https://chat.whatsapp.com/JcU1ZYf6LtI3qbUyrLsbU7)
+- [LinkedIn](https://www.linkedin.com/company/entwinity4u/posts/?feedView=all)
+- [GitHub](https://github.com/parzival43/Entwinity)
+- [Instagram](https://www.instagram.com/entwinity/)
+
+---
+
 ## Built With
 
-The website is intentionally lightweight and easy to maintain. It is built using only standard web technologies, making it simple to host on platforms such as GitHub Pages, Netlify, or Vercel without requiring a backend server.
+The website is intentionally built lightweight and easy to maintain.
 
 * **HTML5** for the website structure
 * **CSS3** with Flexbox and Grid for responsive layouts
-* **Vanilla JavaScript (ES6)** for dynamic functionality
+* **Vanilla JavaScript (ES6)** for dynamic club loading
 * **Lucide Icons** for clean, lightweight icons
 * **Google Fonts** (Outfit and Inter) for typography
 * **Python** for the mail service utilizing **Flask**
-Since there are no heavy frameworks or unnecessary dependencies, the site loads quickly and is easy for anyone to understand and modify.
 
 ---
 

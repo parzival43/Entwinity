@@ -81,6 +81,26 @@
         </ul>
       </nav>
 
+    <div class="social-icons">
+        <a href="https://chat.whatsapp.com/JcU1ZYf6LtI3qbUyrLsbU7" class="social-icon-btn" aria-label="WhatsApp Community" title="WhatsApp Community">
+        <!-- <i data-lucide="message-circle"></i> -->
+        <img src="assets/whatsapp.svg" class="svg-icon" alt="" width="24" height="24">
+        </a>
+        <a href="https://www.linkedin.com/company/entwinity4u/posts/?feedView=all" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+        <!-- <i data-lucide="linkedin"></i> -->
+        <img src="assets/linkedin.svg" class="svg-icon" alt="" width="24" height="24">
+        </a>
+        <a href="https://github.com/parzival43/Entwinity" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+        <!-- <i data-lucide="github"></i> -->
+        <img src="assets/github.svg" class="svg-icon" alt="" width="24" height="24">
+
+        </a>
+        <a href="https://www.instagram.com/entwinity/" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+        <!-- <i data-lucide="instagram"></i> -->
+        <img src="assets/instagram.svg" class="svg-icon" alt="" width="24" height="24">
+        </a>
+    </div>
+
       <!-- Theme Switcher Button -->
       <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle color theme">
         <i data-lucide="moon" class="theme-icon-dark"></i>
@@ -117,8 +137,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Wave separator -->
+<!--
+      
       <div class="section-divider">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
@@ -127,7 +147,7 @@
         </svg>
       </div>
     </section>
-
+    -->
     <!-- Statistics Section -->
     <section class="stats-section">
       <div class="container">
@@ -223,26 +243,6 @@
                   students globally.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clubs Section (DYNAMIC CSV LOAD) -->
-    <section id="clubs" class="clubs-section">
-      <div class="container">
-        <div class="section-header fade-in-on-scroll">
-          <span class="section-tagline">Our Communities</span>
-          <h2 class="section-title">Explore and Join Our Dynamic Student Clubs</h2>
-          <p class="section-desc">Our clubs are organized via dedicated WhatsApp groups. We fetch and render them
-            dynamically, making it easy to hop directly into your areas of interest.</p>
-        </div>
-
-        <!-- Injected dynamically via script.js -->
-        <div id="clubs-grid" class="clubs-grid fade-in-on-scroll">
-          <div class="clubs-loading">
-            <div class="spinner"></div>
-            <p>Loading clubs list dynamically...</p>
           </div>
         </div>
       </div>
@@ -366,6 +366,26 @@
           </div>
           <div class="map-visual fade-in-on-scroll" aria-hidden="true">
             <img src="assets/world.svg" alt="Map representing Entwinity's connected global hubs" class="world-map-svg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Clubs Section (DYNAMIC CSV LOAD) -->
+    <section id="clubs" class="clubs-section">
+      <div class="container">
+        <div class="section-header fade-in-on-scroll">
+          <span class="section-tagline">Our Communities</span>
+          <h2 class="section-title">Explore and Join Our Dynamic Student Clubs</h2>
+          <p class="section-desc">Our clubs are organized via dedicated WhatsApp groups. We fetch and render them
+            dynamically, making it easy to hop directly into your areas of interest.</p>
+        </div>
+
+        <!-- Injected dynamically via script.js -->
+        <div id="clubs-grid" class="clubs-grid fade-in-on-scroll">
+          <div class="clubs-loading">
+            <div class="spinner"></div>
+            <p>Loading clubs list dynamically...</p>
           </div>
         </div>
       </div>
